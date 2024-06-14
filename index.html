@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Digital Business Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Customizable Digital Business Card</h1>
+    <div class="container">
+        <div class="form-container">
+            <h2>Enter Your Information</h2>
+            <form id="cardForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website">
+                
+                <label for="color">Card Color:</label>
+                <input type="color" id="color" name="color" value="#ffffff">
+                
+                <button type="submit">Generate Card</button>
+            </form>
+        </div>
+        
+        <div class="card-container">
+            <h2>Your Business Card</h2>
+            <div id="card" class="card">
+                <div id="cardContent">
+                    <h3 id="cardName">Name</h3>
+                    <p id="cardTitle">Title</p>
+                    <p id="cardEmail">Email</p>
+                    <p id="cardPhone">Phone</p>
+                    <p id="cardWebsite">Website</p>
+                </div>
+                <div id="qrcode"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
